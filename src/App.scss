@@ -1,0 +1,18 @@
+.App {
+    display: grid;
+}
+
+#mainTitle {
+    grid-area: 1/1/2/2;
+    //border: 1px solid pink;
+}
+
+#languages {
+    grid-area: 1/2/2/3;
+    //border: 1px solid pink;
+}
+
+#mainBar {
+    grid-area: 2/1/3/2;
+    //border: 1px solid pink;
+}
