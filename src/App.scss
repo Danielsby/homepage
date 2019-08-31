@@ -1,18 +1,39 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
 .App {
     display: grid;
 }
 
-#mainTitle {
-    grid-area: 1/1/2/2;
+.mainTitle {
+    grid-area: 2/1/3/5;
     //border: 1px solid pink;
+    margin-top: 1.2rem;
+    margin-bottom: 1.3rem;
+    text-align: center;
 }
 
 #languages {
-    grid-area: 1/2/2/3;
+    position: absolute;
+    right: 0;
+    width: 15.3rem;
+    grid-area: 1/4/2/5;
     //border: 1px solid pink;
+    max-height: 0.4rem;
 }
 
 #mainBar {
-    grid-area: 2/1/3/2;
+    grid-area: 4/1/5/5;
+    //border: 1px solid pink;
+}
+
+.mainContent {
+    grid-area: 5/1/6/5;
     //border: 1px solid pink;
 }

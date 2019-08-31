@@ -6,22 +6,22 @@ import {Languages} from "./global/components/Languages";
 const App: React.FC = () => {
     return (
         <div className="App" style={{fontFamily: 'Arial'}}>
-            <header style={{textAlign: "center"}}>
-                <section id='mainTitle'>
-                    <h1 style={{paddingBottom: 0, marginBottom: 0}}>Danielsby</h1>
-                </section>
-                <section className='languages' style={{float: 'right'}} id='languages'>
-                    <Languages />
-                </section>
+
+            <header className='mainTitle'>
+                <h1>Danielsby</h1>
             </header>
+
+            <section className='languages' style={{float: 'right'}} id='languages'>
+                <Languages />
+            </section>
 
             <nav className='navigationBar' style={{width: '100%'}} id='mainBar'>
                 <MainNavigationBar />
             </nav>
 
-            <main>
+            <main className='mainContent'>
                 <div style={{marginTop: '3rem', marginLeft: '0.4rem', fontSize: '18px'}}>
-                    <p>More is coming very soon</p>
+                    <p>More content is coming very soon</p>
                 </div>
             </main>
 
