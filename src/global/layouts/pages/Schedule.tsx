@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const Status: React.FC = () => {
+export const Schedule: React.FC = () => {
     return (
         <div>
-            <h3>Status page</h3>
+            <h3>Schedule page</h3>
         </div>
     );
 };
