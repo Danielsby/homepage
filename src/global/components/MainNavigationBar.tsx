@@ -1,13 +1,14 @@
 import * as React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export const MainNavigationBar: React.FC = () => {
     return (
         <ul>
-            <li><a href="default.asp">Home</a></li>
-            <li><a href="news.asp">Schedule</a></li>
-            <li><a href="about.asp">Projects</a></li>
-            <li><a href="about.asp">About</a></li>
-            <li><a href="contact.asp">Contact</a></li>
+            <li><NavLink to='/'>Home</NavLink></li>
+            <li><NavLink to='/status'>Status</NavLink></li>
+            <li><NavLink to='/projects'>Projects</NavLink></li>
+            <li><NavLink to='/about'>About me</NavLink></li>
+            <li><NavLink to='/contact'>Contact me</NavLink></li>
         </ul>
     )
 };
