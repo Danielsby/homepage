@@ -7,6 +7,10 @@ export const Frontpage: React.FC = () => {
                 <h3>News</h3>
             </header>
 
+            <section className='status'>
+                These webpages are under active development.
+            </section>
+
             <article className='weather'>
 
             </article>
