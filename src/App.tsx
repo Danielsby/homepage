@@ -12,7 +12,7 @@ const App: React.FC = () => {
         <div className="App" style={{fontFamily: 'Arial'}}>
 
             <header className='mainTitle'>
-                <h1>Portfolio</h1>
+                <h1>Portfolio homepage</h1>
             </header>
 
             <section className='languages' style={{float: 'right'}} id='languages'>

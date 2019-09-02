@@ -4,12 +4,11 @@ export const About: React.FC = () => {
     return (
         <div>
             <header>
-                <h2 style={{textAlign: 'center', borderBottom: '3px solid #FFE5B4', marginLeft: '25rem', marginRight: '25rem',
-                    paddingBottom: '0.7rem', marginBottom: '2rem'}}>Daniel By</h2>
+                <h4 style={{textAlign: 'center', borderBottom: '3px solid #FFE5B4', marginLeft: '25rem', marginRight: '25rem',
+                    paddingBottom: '0.7rem', marginBottom: '2rem'}}>Daniel By</h4>
             </header>
 
             <main>
-
                 <article className='personal'>
                     <h3>Personal facts</h3>
                     <p>09.02.1992 Trondheim</p>

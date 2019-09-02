@@ -17,7 +17,7 @@ export const Frontpage: React.FC = () => {
             </article>
 
             <main className='news'>
-                <article style={{border: '2px solid pink', padding: '2rem', marginRight: '30rem'}}>
+                <article style={{borderLeft: '3px solid pink', padding: '2rem', marginRight: '30rem', marginLeft: '2rem'}}>
                     Nimado projects are about to begin it's pre-production!
                 </article>
             </main>
