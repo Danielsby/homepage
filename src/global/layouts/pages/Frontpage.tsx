@@ -8,7 +8,7 @@ export const Frontpage: React.FC = () => {
             </header>
 
             <section className='status'>
-                <p>These webpages are under active development.</p>
+                <h6>These webpages are under active development and might therefore be lacking for the time being.</h6>
             </section>
 
             <article className='weather'>
