@@ -1,7 +1,6 @@
 import React from 'react';
 
 import './App.scss';
-
 import {Main} from "./global/Main";
 
 import {MainNavigationBar} from "./global/components/MainNavigationBar";

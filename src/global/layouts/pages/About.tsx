@@ -17,15 +17,17 @@ export const About: React.FC = () => {
 
                 <section className='history'>
                     <h3>History</h3>
+                    <p>
                     Born in Trondheim. Studied in Vestfold.
                     Has worked in kindergarden for years.
                     Finished studies 2019. Went one week after to internship
                     to persuade frontend development with the use of react technology.
+                    </p>
                 </section>
 
                 <section className='interests'>
                     <h3>Interests</h3>
-                    I'm interested in a wide range of topics.
+                    <p> I'm interested in a wide range of topics. </p>
                 </section>
 
                 <section className='inspirations'>

@@ -3,7 +3,13 @@ import React from 'react';
 export const Schedule: React.FC = () => {
     return (
         <div>
-            <h3>Schedule page</h3>
+            <header>
+                <h3>Schedule</h3>
+            </header>
+
+            <main>
+                <p>The nimado project pre-production.</p>
+            </main>
         </div>
     );
 };

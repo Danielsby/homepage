@@ -8,7 +8,8 @@ export const Frontpage: React.FC = () => {
             </header>
 
             <section className='status'>
-                <h6>These webpages are under active development and might therefore be lacking for the time being.</h6>
+                <h6>Webpages: under active development and might therefore be lacking for the time being.</h6>
+                <h6>Status: Open - Looking for a frontend developer position </h6>
             </section>
 
             <article className='weather'>
@@ -16,7 +17,9 @@ export const Frontpage: React.FC = () => {
             </article>
 
             <main className='news'>
-                Nimado projects are about to begin it's pre-production!
+                <article style={{border: '2px solid pink', padding: '2rem', marginRight: '30rem'}}>
+                    Nimado projects are about to begin it's pre-production!
+                </article>
             </main>
 
             <footer className='page information'>
