@@ -8,7 +8,8 @@ export const Schedule: React.FC = () => {
             </header>
 
             <main>
-                <p>The nimado project pre-production.</p>
+                <p>September: The nimado project pre-production.</p>
+                <p>October: The nimado project production</p>
             </main>
         </div>
     );
