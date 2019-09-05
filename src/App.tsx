@@ -11,14 +11,14 @@ const App: React.FC = () => {
     return (
         <div className="App" style={{fontFamily: 'Arial'}}>
 
+            <section className='languages' style={{float: 'right'}} id='languages'>
+                <Languages />
+            </section>
+
             <header className='mainTitle'>
                 <h1>Daniel By's portfolio</h1>
                 <h4>Frontend developer</h4>
             </header>
-
-            <section className='languages' style={{float: 'right'}} id='languages'>
-                <Languages />
-            </section>
 
             <nav className='navigationBar' style={{width: '100%'}} id='mainBar'>
                 <MainNavigationBar />
