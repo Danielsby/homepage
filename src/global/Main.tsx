@@ -9,7 +9,7 @@ import {Contact} from "./layouts/pages/Contact";
 
 export const Main = () => (
     <Switch>
-        <Route exact path='/' component={Frontpage}></Route>
+        <Route exact path='/homepage' component={Frontpage}></Route>
         <Route exact path='/about' component={About}></Route>
         <Route exact path='/schedule' component={Schedule}></Route>
         <Route exact path='/projects' component={Projects}></Route>
