@@ -1,11 +1,12 @@
 .status {
+  display: flex;
+  text-align: center;
   border-left: 3px solid pink;
-  padding: 2rem;
-  margin-bottom: 2rem;
+  padding: 1.8rem;
+  margin-bottom: 1rem;
 }
 
 .news {
   border-left: 3px solid pink;
-  padding: 2rem;
-  margin-right: 30rem;
+  padding: 1.8rem;
 }
