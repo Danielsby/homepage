@@ -29,9 +29,8 @@ const App: React.FC = () => {
                 </div>
             </main>
 
-            <footer>
-                <section>
-                </section>
+            <footer className='page-information'>
+                <a href="www.linkedin.com/dby">LinkedIn</a>
             </footer>
         </div>
     );

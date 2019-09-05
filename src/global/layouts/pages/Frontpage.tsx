@@ -22,9 +22,6 @@ export const Frontpage: React.FC = () => {
                     Nimado projects are about to begin it's pre-production!
                 </article>
             </main>
-
-            <footer className='page information'>
-            </footer>
         </div>
     );
 };
