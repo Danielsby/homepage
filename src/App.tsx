@@ -12,7 +12,8 @@ const App: React.FC = () => {
         <div className="App" style={{fontFamily: 'Arial'}}>
 
             <header className='mainTitle'>
-                <h1>Daniel By's Portfolio</h1>
+                <h1>Daniel By's portfolio</h1>
+                <h4>Frontend developer</h4>
             </header>
 
             <section className='languages' style={{float: 'right'}} id='languages'>
@@ -30,7 +31,8 @@ const App: React.FC = () => {
             </main>
 
             <footer className='page-information'>
-                <a href="https://www.linkedin.com/in/dby/">LinkedIn</a>
+                <a style={{margin: '1rem'}} href="https://www.linkedin.com/in/dby/">LinkedIn</a>
+
                 <a href="https://www.github.com/danielsby">Github</a>
             </footer>
         </div>
