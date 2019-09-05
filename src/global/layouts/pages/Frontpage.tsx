@@ -1,10 +1,11 @@
 import React from 'react';
+import './frontpage.scss';
 
 export const Frontpage: React.FC = () => {
     return (
         <div>
             <header>
-                <h3>News</h3>
+                <h3 className='news-title'>News</h3>
             </header>
 
             <section className='status'>
@@ -17,7 +18,7 @@ export const Frontpage: React.FC = () => {
             </article>
 
             <main className='news'>
-                <article style={{borderLeft: '3px solid pink', padding: '2rem', marginRight: '30rem', marginLeft: '2rem'}}>
+                <article>
                     Nimado projects are about to begin it's pre-production!
                 </article>
             </main>

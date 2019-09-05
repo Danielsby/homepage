@@ -1,4 +1,9 @@
 .navigationBar {
+  display: flex;
+  padding-left: 6rem;
+  min-height: 3rem;
+  max-height: 3rem;
+
   ul {
     list-style-type: none;
     margin: 0;
