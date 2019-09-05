@@ -9,8 +9,7 @@ import {Frontpage} from "./global/layouts/pages/Frontpage";
 
 const App: React.FC = () => {
     return (
-        <div className="App" style={{fontFamily: 'Arial'}}>
-
+        <div className="App">
             <section className='languages' style={{float: 'right'}} id='languages'>
                 <Languages />
             </section>
