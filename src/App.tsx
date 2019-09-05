@@ -30,7 +30,7 @@ const App: React.FC = () => {
             </main>
 
             <footer className='page-information'>
-                <a href="www.linkedin.com/dby">LinkedIn</a>
+                <a href="https://www.linkedin.com/dby">LinkedIn</a>
             </footer>
         </div>
     );
