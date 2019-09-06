@@ -28,7 +28,7 @@ export const About: React.FC = () => {
                     <h3>Studio Ghibli</h3>
                     <p>
                         Their animation technique and process to produce quality through hard work has
-                        been a big inspiration from me. I have been able to link the similarities and
+                        been a big inspiration to me. I have been able to link the similarities and
                         differences between the hand-drawing animation to software development.
                         I believe there is great things to learn from other industries such as this one.
                     </p>
