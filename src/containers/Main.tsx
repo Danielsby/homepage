@@ -1,11 +1,11 @@
 import React from 'react';
 import { NavLink, Switch, Route } from 'react-router-dom';
 
-import {About} from "./layouts/pages/About";
-import {Frontpage} from "./layouts/pages/Frontpage";
-import {Projects} from "./layouts/pages/Projects";
-import {Schedule} from "./layouts/pages/Schedule";
-import {Contact} from "./layouts/pages/Contact";
+import {About} from "./About";
+import {Frontpage} from "./Frontpage";
+import {Projects} from "./Projects";
+import {Schedule} from "./Schedule";
+import {Contact} from "./Contact";
 
 export const Main = () => (
     <Switch>

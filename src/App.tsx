@@ -1,11 +1,11 @@
 import React from 'react';
 
 import './App.scss';
-import {Main} from "./global/Main";
+import {Main} from "./containers/Main";
 
-import {MainNavigationBar} from "./global/components/MainNavigationBar";
-import {Languages} from "./global/components/Languages";
-import {Frontpage} from "./global/layouts/pages/Frontpage";
+import {MainNavigationBar} from "./presentations/components/MainNavigationBar";
+import {Languages} from "./presentations/components/Languages";
+import {Frontpage} from "./containers/Frontpage";
 
 const App: React.FC = () => {
     return (

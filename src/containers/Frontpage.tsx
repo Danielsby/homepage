@@ -1,5 +1,5 @@
 import React from 'react';
-import './frontpage.scss';
+import '../css/frontpage.scss';
 
 export const Frontpage: React.FC = () => {
     return (
