@@ -21,7 +21,7 @@ export const About: React.FC = () => {
 
                 <section className='interests'>
                     <h3>Interests</h3>
-                    <p> I'm interested in a wide range of topics. </p>
+                    <p> I'm interested in a wide range of topics such as music and swimming. </p>
                 </section>
 
                 <section className='inspirations'>
@@ -29,8 +29,8 @@ export const About: React.FC = () => {
                     <p>
                         Their animation technique and process to produce quality through hard work has
                         been a big inspiration to me. I have been able to link the similarities and
-                        differences between the hand-drawing animation to software development.
-                        I believe there is great things to learn from other industries such as this one.
+                        differences between the hand-drawing animation industry to the software development industry.
+                        I believe there is great things to learn from other industries.
                     </p>
                 </section>
             </main>

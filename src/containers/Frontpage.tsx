@@ -1,16 +1,13 @@
 import React from 'react';
 import '../css/frontpage.scss';
+import Status from "../presentations/components/Status";
 
 export const Frontpage: React.FC = () => {
     return (
         <div>
-            <header>
+            <header className='title-news'>
                 <h3 className='news-title'>News</h3>
             </header>
-
-            <section className='status'>
-                <p>Status: Open - Looking for a frontend developer position </p>
-            </section>
 
             <article className='weather'>
 
@@ -18,7 +15,7 @@ export const Frontpage: React.FC = () => {
 
             <main className='news'>
                 <article>
-                    <p>Nimado projects are about to begin it's pre-production!</p>
+                    <p>Nitji web development is under pre-production!</p>
                 </article>
             </main>
         </div>
