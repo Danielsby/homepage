@@ -1,11 +1,11 @@
 import React from 'react';
 
-import './scss/App.scss';
-import {Main} from "./containers/Main";
+import '../scss/App.scss';
+import {Main} from "../middleware/routing/Main";
 
-import {MainNavigationBar} from "./components/components/MainNavigationBar";
-import Status from "./components/components/Status";
-import Header from "./components/components/Header";
+import {MainNavigationBar} from "../components/MainNavigationBar";
+import Status from "../components/Status";
+import Header from "../components/Header";
 
 const App: React.FC = () => {
     return (

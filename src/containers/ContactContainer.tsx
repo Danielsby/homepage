@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Contact: React.FC = () => {
+const ContactContainer: React.FC = () => {
     return (
         <div>
             <header>
@@ -14,3 +14,5 @@ export const Contact: React.FC = () => {
         </div>
     );
 };
+
+export default ContactContainer;

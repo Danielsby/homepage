@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const About: React.FC = () => {
+const AboutContainer: React.FC = () => {
     return (
         <div>
             <main>
@@ -37,3 +37,5 @@ export const About: React.FC = () => {
         </div>
     );
 };
+
+export default AboutContainer;

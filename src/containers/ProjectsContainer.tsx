@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Projects: React.FC = () => {
+const ProjectsContainer: React.FC = () => {
     return (
         <div>
             <header>
@@ -22,3 +22,5 @@ export const Projects: React.FC = () => {
         </div>
     );
 };
+
+export default ProjectsContainer;

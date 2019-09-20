@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Schedule: React.FC = () => {
+const ScheduleContainer: React.FC = () => {
     return (
         <div>
             <header>
@@ -14,3 +14,5 @@ export const Schedule: React.FC = () => {
         </div>
     );
 };
+
+export default ScheduleContainer;
