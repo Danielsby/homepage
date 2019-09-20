@@ -1,6 +1,6 @@
 import React from 'react';
-import '../css/frontpage.scss';
-import Status from "../presentations/components/Status";
+import '../scss/frontpage.scss';
+import Status from "../components/components/Status";
 
 export const Frontpage: React.FC = () => {
     return (
