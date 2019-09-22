@@ -1,15 +1,18 @@
 .app {
     display: grid;
     margin-top: 0.5rem;
-    grid-template-columns: repeat(2, 1fr) repeat(2, 2fr) repeat(2, 1fr);
-    grid-template-rows: 50px 1fr 60px repeat(3, 1fr);
-    grid-template-areas:
-        ". . status status . ."
-        ". . title title . ."
-        ". . navigation navigation . ."
-        ". . content content . ."
-        ". . content content . ."
-        ". . information information . .";
+
+    grid: {
+        template-columns: repeat(2, 1fr) repeat(2, 2fr) repeat(2, 1fr);
+        template-rows: 50px 1fr 60px repeat(3, 1fr);
+        template-areas:
+                ". . status status . ."
+                ". . title title . ."
+                ". . navigation navigation . ."
+                ". . content content . ."
+                ". . content content . ."
+                ". . information information . .";
+    }
 
     .status {
         grid-area: status;
@@ -28,15 +31,15 @@
     }
 
     .content {
-        grid-area: content;
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr;
-
-        grid-template-areas:
-            "content-header"
-            "content-main";
-
+        grid: {
+            area: content;
+            template-columns: 1fr;
+            template-rows: 1fr 2fr;
+            template-areas:
+                    "content-header"
+                    "content-main";
+        }
 
         &-header {
             grid-area: content-header;
@@ -52,7 +55,7 @@
     .information {
         grid-area: information;
 
-        background-color: #ebebeb;
+        background-color: #e0dbfa;
         overflow: hidden;
 
         a:link {
@@ -80,6 +83,7 @@
         position: absolute;
         text-align: center;
         justify-items: flex-start;
+
         align-content: flex-start;
         align-items: flex-start;
         bottom: 0;
