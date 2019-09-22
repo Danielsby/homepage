@@ -1,9 +1,11 @@
 import * as React from 'react';
 
-const Buttons: React.FC = () => {
+interface ButtonProps {
+    title: string;
+}
+
+export const StandardButton: React.FC<ButtonProps> = (props) => {
     return (
-        <button>Find</button>
+        <button>{props.title}</button>
     )
 };
-
-export default Buttons;
