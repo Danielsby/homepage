@@ -23,12 +23,12 @@
     .navigation {
         grid-area: navigation;
         border-bottom: 2px solid #dfdfdf;
+
     }
 
     .content {
         grid-area: content;
         display: flex;
-        padding-left: 0.8rem;
     }
 
     .information {
