@@ -2,12 +2,12 @@ import React from 'react';
 
 const ProjectsContainer: React.FC = () => {
     return (
-        <div>
-            <header>
+        <>
+            <header className='content-header'>
                 <h3>Projects</h3>
             </header>
 
-            <main>
+            <main className='content-main'>
                 <p>
                     I actively develop in two places.
                     The first place is my own github account.
@@ -19,7 +19,7 @@ const ProjectsContainer: React.FC = () => {
                     More about the spesific projects will be coming on the current page.
                 </p>
             </main>
-        </div>
+        </>
     );
 };
 

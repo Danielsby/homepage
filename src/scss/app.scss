@@ -2,7 +2,7 @@
     display: grid;
     margin-top: 0.5rem;
     grid-template-columns: repeat(2, 1fr) repeat(2, 2fr) repeat(2, 1fr);
-    grid-template-rows: 50px repeat(5, 1fr);
+    grid-template-rows: 50px 1fr 60px repeat(3, 1fr);
     grid-template-areas:
         ". . status status . ."
         ". . title title . ."
@@ -13,6 +13,8 @@
 
     .status {
         grid-area: status;
+        display: flex;
+        text-align: center;
     }
 
     .title {
@@ -22,13 +24,29 @@
 
     .navigation {
         grid-area: navigation;
-        border-bottom: 2px solid #dfdfdf;
-
+        border-bottom: 2px solid #7c83df;
     }
 
     .content {
         grid-area: content;
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+
+        grid-template-areas:
+            "content-header"
+            "content-main";
+
+
+        &-header {
+            grid-area: content-header;
+        }
+
+        &-main {
+            grid-area: content-main;
+        }
+
+        &-footer { }
     }
 
     .information {

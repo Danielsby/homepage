@@ -12,7 +12,6 @@ const Root: React.FC<RootProps> = ({store}) => (
         <Router>
             <RouteSwitch>
                 <Route exact path='/homepage' component={App}></Route>
-                <Route exact path='/about' component={App}></Route>
                 <Route exact path='/schedule' component={App}></Route>
                 <Route exact path='/projects' component={App}></Route>
                 <Route exact path='/contact' component={App}></Route>
