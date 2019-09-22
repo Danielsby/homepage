@@ -2,7 +2,7 @@ import React from 'react';
 import '../scss/frontpage.scss';
 import Status from "../components/Status";
 
-export const Frontpage: React.FC = () => {
+export const HomeContainer: React.FC = () => {
     return (
         <div>
             <header className='title-news'>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../scss/App.scss';
+import '../scss/app.scss';
 import {Main} from "../middleware/routing/Main";
 
 import {MainNavigationBar} from "../components/MainNavigationBar";
@@ -9,26 +9,24 @@ import Header from "../components/Header";
 
 const App: React.FC = () => {
     return (
-        <div className="App">
-            <section className='languages' style={{float: 'right'}} id='languages'>
+        <div className="app">
+            <section className='status'>
                 <Status status={'open'} />
             </section>
 
-            <header className='mainTitle'>
+            <header className='title'>
                 <Header profession={'Frontend developer'}/>
             </header>
 
-            <nav className='navigationBar' style={{width: '100%'}} id='mainBar'>
+            <nav className='navigation'>
                 <MainNavigationBar />
             </nav>
 
-            <main className='mainContent'>
-                <div style={{marginTop: '3rem', marginLeft: '0.4rem', fontSize: '18px'}}>
-                    <Main />
-                </div>
+            <main className='content'>
+                <Main />
             </main>
 
-            <footer className='page-information'>
+            <footer className='information'>
                 <a style={{margin: '1rem'}} href="https://www.linkedin.com/in/dby/">LinkedIn</a>
                 <a  style={{margin: '8rem'}} href="https://www.github.com/danielsby">Github</a>
                 <a href="https://www.github.com/nitji">Nitji</a>
