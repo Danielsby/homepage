@@ -5,7 +5,6 @@ import App from "../../containers/App";
 
 interface RootProps {
     store: any
-    title: string;
 }
 
 const Root: React.FC<RootProps> = ({store}) => (
