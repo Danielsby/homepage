@@ -11,7 +11,7 @@ const App: React.FC = () => {
     return (
         <div className="app">
             <section className='status'>
-                <Status status={'open'} />
+                <Status status={'has a position'} />
             </section>
 
             <header className='title'>
