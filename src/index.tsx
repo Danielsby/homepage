@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './scss/index.scss';
-import App from './containers/App';
+import App from './pages/Home';
 import {BrowserRouter} from 'react-router-dom';
 import {store} from './redux/Store';
 
-import * as serviceWorker from './progressive/serviceWorker';
+import * as serviceWorker from './serviceWorker';
 import Root from "./middleware/routing/Root";
 
 ReactDOM.render((

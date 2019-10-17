@@ -1,13 +1,13 @@
 import React from 'react';
 
-import '../scss/app.scss';
+import '../scss/home.scss';
 import {Main} from "../middleware/routing/Main";
 
 import {MainNavigationBar} from "../components/MainNavigationBar";
 import Status from "../components/Status";
 import Header from "../components/Header";
 
-const App: React.FC = () => {
+const Home: React.FC = () => {
     return (
         <div className="app">
             <section className='status'>
@@ -35,4 +35,4 @@ const App: React.FC = () => {
     );
 };
 
-export default App;
+export default Home;
