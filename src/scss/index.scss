@@ -1,2 +1,10 @@
+@import './variables';
+
 @import 'modules/navigationBars';
 @import 'base/base';
+
+@import 'pages/activity/activity';
+@import 'pages/activity/activitymain';
+
+
+@import "layouts/topbar";

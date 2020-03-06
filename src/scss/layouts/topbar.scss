@@ -1,0 +1,32 @@
+.top-bar {
+  display: grid;
+  grid: {
+    template-rows: 1fr;
+    template-columns: 1fr 1fr 1fr 1fr;
+    template-areas:
+      "top-bar__title"
+      "top-bar__navigation"
+      "top-bar__cvbutton"
+      "top-bar__languages";
+  };
+
+  &__title {
+    grid-area: top-bar__title;
+    border: 1px solid blue;
+  }
+
+  &__navigation {
+    grid-area: top-bar__navigation;
+    border: 1px solid blue;
+  }
+
+  &__cvbutton {
+    grid-area: top-bar__cvbutton;
+    border: 1px solid blue;
+  }
+
+  &__languages {
+    grid-area: top-bar__languages;
+    border: 1px solid blue;
+  }
+}

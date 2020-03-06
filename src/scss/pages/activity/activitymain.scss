@@ -1,0 +1,19 @@
+.activity__main {
+  display: grid;
+  grid: {
+    template-rows: 1fr;
+    template-columns: 400px 1fr;
+    template-areas:
+      "sidebar" "content";
+  };
+
+  &__sidebar {
+    grid-area: sidebar;
+    border: 1px solid blue;
+  }
+
+  &__content {
+    grid-area: content;
+    border: 1px solid blue;
+  }
+}

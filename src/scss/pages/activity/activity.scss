@@ -1,0 +1,32 @@
+.activity {
+  display: grid;
+  height: 100vw;
+  //width: 100vh;
+
+  grid: {
+    template-columns: 1fr;
+    template-rows: 100px 1fr 100px;
+    template-areas:
+      "activity__header"
+      "activity__main"
+      "activity__footer"
+  };
+
+  &__header {
+    grid-area: activity__header;
+    display: flex;
+    border: 1px solid orchid;
+  }
+
+  &__main {
+    grid-area: activity__main;
+    display: flex;
+    border: 1px solid orchid;
+  }
+
+  &__footer {
+    grid-area: activity__footer;
+    display: flex;
+    border: 1px solid orchid;
+  }
+}
