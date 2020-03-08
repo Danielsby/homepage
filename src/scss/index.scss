@@ -3,8 +3,10 @@
 @import 'modules/navigationBars';
 @import 'base/base';
 
-@import 'pages/activity/activity';
-@import 'pages/activity/activitymain';
+// Grids
+@import 'pages/home/home';
+//@import 'pages/activity/activitymain';
 
-
+// Sections
 @import "layouts/topbar";
+@import "layouts/bottombar";

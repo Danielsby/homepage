@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './scss/index.scss';
-import App from './pages/Activity';
+import App from './pages/Main';
 import {BrowserRouter} from 'react-router-dom';
 import {store} from './redux/Store';
 

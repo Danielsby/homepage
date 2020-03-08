@@ -7,22 +7,34 @@ const TopBar = () => {
     <div className="top-bar">
       <header className="top-bar__title">
         <BigTitle title="Daniel By"/>
-        <BigTitle title="UI/Frontend Developer"/>
+        <BigTitle title="UI & Frontend Developer"/>
       </header>
 
       <nav className="top-bar__navigation">
-        <BigTitle title="News"/>
-        <BigTitle title="Projects"/>
-        <BigTitle title="Philosophy"/>
+        <section className="news">
+          <BigTitle title="News"/>
+        </section>
+        <section className="projects">
+          <BigTitle title="Projects"/>
+        </section>
+        <section className="about">
+          <BigTitle title="About"/>
+        </section>
       </nav>
 
-      <aside className="top-bar__cvbutton">
-        <CVButton/>
-      </aside>
-
       <footer className="top-bar__languages">
-        <SmallTitle title="English"/>
-        <SmallTitle title="Korean"/>
+        <article className="language">
+          <SmallTitle title="English"/>
+        </article>
+        <article className="language">
+          <SmallTitle title="Korean"/>
+        </article>
+        <article className="language">
+          <SmallTitle title="Japanese"/>
+        </article>
+        <article className="language">
+          <SmallTitle title="Chinese"/>
+        </article>
       </footer>
     </div>
   )

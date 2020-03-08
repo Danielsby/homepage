@@ -1,32 +1,36 @@
 .top-bar {
   display: grid;
+  width: 100%;
+;
   grid: {
     template-rows: 1fr;
-    template-columns: 1fr 1fr 1fr 1fr;
+    template-columns: 1fr 1fr 1fr;
     template-areas:
-      "top-bar__title"
-      "top-bar__navigation"
-      "top-bar__cvbutton"
-      "top-bar__languages";
+      "test test1 test2";
   };
 
   &__title {
-    grid-area: top-bar__title;
-    border: 1px solid blue;
+    grid-area: test;
   }
 
   &__navigation {
-    grid-area: top-bar__navigation;
-    border: 1px solid blue;
+    grid-area: test1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    > section {
+      padding-right: 10px;
+    }
   }
 
-  &__cvbutton {
-    grid-area: top-bar__cvbutton;
-    border: 1px solid blue;
-  }
 
   &__languages {
-    grid-area: top-bar__languages;
-    border: 1px solid blue;
+    grid-area: test2;
+    display: flex;
+    text-align: center;
+    .language {
+      width: 100%;
+      padding-right: 3px;
+    }
   }
 }
