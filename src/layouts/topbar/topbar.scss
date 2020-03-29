@@ -1,0 +1,54 @@
+.top-bar {
+  display: grid;
+  width: 100%;
+
+  grid: {
+    template-rows: 1fr;
+    template-columns: 1fr 1fr 1fr;
+    template-areas:
+      "titles navigation languages";
+  };
+
+  &__title {
+    grid-area: titles;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .name {
+      color: $black;
+    }
+
+    .title {
+      margin-left: $text-gap;
+      color: $blue;
+    }
+  }
+
+  &__navigation {
+    grid-area: navigation;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: $black;
+
+    > section {
+      padding-right: $text-gap;
+    }
+  }
+
+
+  &__languages {
+    grid-area: languages;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: $black;
+
+    .language {
+      //width: 100%;
+      padding-right: $text-gap;
+    }
+  }
+}

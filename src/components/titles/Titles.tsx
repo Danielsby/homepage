@@ -10,6 +10,12 @@ export const BigTitle: React.FC<TitleProps> = (props) => {
   )
 };
 
+export const MediumTitle: React.FC<TitleProps> = (props) => {
+  return (
+    <h3>{props.title}</h3>
+  )
+};
+
 export const SmallTitle: React.FC<TitleProps> = (props) => {
   return (
     <h6>{props.title}</h6>

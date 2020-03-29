@@ -1,16 +1,22 @@
 .home {
   display: grid;
-  height: 100vw;
+  height: 100%;
   //width: 100vh;
+  margin-top: $window-gap;
+  margin-right: $window-gap * 3;
+  margin-left: $window-gap * 3;
+  margin-bottom: $window-gap * 2;
 
   grid: {
     template-columns: 1fr;
-    template-rows: 100px 1fr 100px;
+    template-rows: 50px 800px 50fr;
     template-areas:
       "home__header"
       "home__main"
       "home__footer"
   };
+
+  // TODO: add breakpoints (responsive design)
 
   &__header {
     grid-area: home__header;

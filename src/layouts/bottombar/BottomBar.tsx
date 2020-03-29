@@ -5,10 +5,10 @@ const BottomBar: React.FC = () => {
     <div className="bottom-bar">
       <section className="links">
         <article className="linkedin">
-          <a style={{margin: '1rem'}} href="https://www.linkedin.com/in/dby/">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/dby/">LinkedIn</a>
         </article>
         <article className="github">
-          <a style={{margin: '1rem'}} href="https://www.linkedin.com/in/dby/">Github</a>
+          <a href="https://www.linkedin.com/in/dby/">Github</a>
         </article>
       </section>
     </div>

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Provider} from "react-redux";
 import {BrowserRouter as Router, Route, Switch as RouteSwitch} from "react-router-dom";
-import App from "../../pages/Main";
+import App from "../../pages/main/Main";
 
 interface RootProps {
     store: any

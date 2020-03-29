@@ -1,12 +1,14 @@
 @import './variables';
 
-@import 'modules/navigationBars';
+// Global
+@import '../components/nav/navigationBars';
 @import 'base/base';
 
-// Grids
-@import 'pages/home/home';
+// Pages
+@import '../pages/main/home';
 //@import 'pages/activity/activitymain';
 
-// Sections
-@import "layouts/topbar";
-@import "layouts/bottombar";
+// Layouts
+@import '../layouts/main/mainwindow';
+@import "../layouts/topbar/topbar";
+@import "../layouts/bottombar/bottombar";

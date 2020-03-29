@@ -6,11 +6,12 @@ import {HomeContainer} from "../../containers/HomeContainer";
 import ProjectsContainer from "../../containers/ProjectsContainer";
 import ScheduleContainer from "../../containers/ScheduleContainer";
 import ContactContainer from "../../containers/ContactContainer";
-import Home from '../../pages/Main';
+import Home from "../../pages/home/Home";
+
 
 export const Main = () => (
     <Switch>
-      <Route exact path='/homepage' component={HomeContainer}></Route>
+      <Route exact path='/homepage' component={Home}></Route>
       <Route exact path='/schedule' component={ScheduleContainer}></Route>
       <Route exact path='/projects' component={ProjectsContainer}></Route>
       <Route exact path='/contact' component={ContactContainer}></Route>

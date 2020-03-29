@@ -1,0 +1,28 @@
+.bottom-bar {
+  width: 100%;
+  .links {
+    display: flex;
+    justify-content: center;
+
+    a:link {
+      color: $blue;
+    }
+    a:visited {
+      color: $purple;
+    }
+    a:hover {
+      color: $red;
+    }
+    a:active {
+      color: $gray;
+    }
+
+    .linkedin {
+
+    }
+
+    .github {
+      margin-left: $text-gap;
+    }
+  }
+}

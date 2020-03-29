@@ -1,20 +1,17 @@
 import React from 'react';
 
-import '../scss/homereference.scss';
-import {Main} from "../middleware/routing/Main";
+import '../../scss/homereference.scss';
+import {Main} from "../../middleware/routing/Main";
 
-import TopBar from "../layouts/TopBar";
-import BottomBar from "../layouts/BottomBar";
+import TopBar from "../../layouts/topbar/TopBar";
+import BottomBar from "../../layouts/bottombar/BottomBar";
+
 const Home: React.FC = () => {
   return (
     <div className="home">
       <header className='home__header'>
         <TopBar/>
       </header>
-
-      <main className="home__main">
-        <p>Main comes here</p>
-      </main>
 
       <footer className='home__footer'>
         <BottomBar/>

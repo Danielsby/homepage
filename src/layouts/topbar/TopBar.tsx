@@ -1,13 +1,16 @@
 import * as React from 'react';
-import {BigTitle, SmallTitle} from "../components/Titles";
-import {CVButton} from "./CVButton";
+import {BigTitle, MediumTitle, SmallTitle} from "../../components/titles/Titles";
 
 const TopBar = () => {
   return (
     <div className="top-bar">
       <header className="top-bar__title">
-        <BigTitle title="Daniel By"/>
-        <BigTitle title="UI & Frontend Developer"/>
+        <section className="name">
+          <BigTitle title="Daniel By"/>
+        </section>
+        <section className="title">
+          <MediumTitle title="UI & Frontend Developer"/>
+        </section>
       </header>
 
       <nav className="top-bar__navigation">
