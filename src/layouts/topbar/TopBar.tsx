@@ -14,14 +14,14 @@ const TopBar = () => {
       </header>
 
       <nav className="top-bar__navigation">
-        <section className="news">
-          <BigTitle title="News"/>
-        </section>
         <section className="projects">
           <BigTitle title="Projects"/>
         </section>
         <section className="about">
           <BigTitle title="About"/>
+        </section>
+        <section className="news">
+          <BigTitle title="Contact"/>
         </section>
       </nav>
 
