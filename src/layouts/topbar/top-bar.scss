@@ -1,0 +1,75 @@
+$breakpoints: (
+        'small': 500px,
+        'large': 800px,
+);
+
+@mixin alignment($grid-area, $flex-position) {
+  grid-area: $grid-area;
+  justify-content: $flex-position;
+  display: flex;
+  align-items: center;
+}
+
+@mixin grid-system($row, $column, $area) {
+  grid: {
+    template-columns: $column;
+    template-rows: $row;
+    template-areas: $area;
+  };
+}
+
+@mixin change-grid($media, $row, $column, $area) {
+  @media (min-width: $media) {
+    @include grid-system($row, $column, $area);
+  }
+}
+
+.top-bar {
+  display: grid;
+  width: 100%;
+
+  // If mixin breaks
+  grid: {
+    template-rows: 1fr 1fr 1fr;
+    template-columns: 1fr;
+    template-areas:
+            "titles"
+            "navigation"
+            "languages";
+  };
+
+  //@include change-grid(map_get($breakpoints, 'small'), 1fr, 1fr 1fr, "navigation languages");
+  @include change-grid(map_get($breakpoints, 'large'), 1fr, 1fr 1fr 1fr, "titles navigation languages");
+
+  &__title {
+    @include alignment(titles, flex-start);
+
+    .name {
+      color: $black;
+    }
+
+    .professions {
+      margin-left: $text-gap;
+      color: $blue;
+    }
+  }
+
+  &__navigation {
+    @include alignment(navigation, center);
+
+    color: $black;
+
+    > section {
+      padding-right: $text-gap;
+    }
+  }
+
+
+  &__languages {
+    @include alignment(languages, flex-end);
+
+    .language {
+      padding-right: $text-gap;
+    }
+  }
+}

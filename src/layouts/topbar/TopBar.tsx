@@ -8,20 +8,14 @@ const TopBar = () => {
         <section className="name">
           <BigTitle title="Daniel By"/>
         </section>
-        <section className="title">
+        <section className="professions">
           <MediumTitle title="UI & Frontend Developer"/>
         </section>
       </header>
 
       <nav className="top-bar__navigation">
         <section className="projects">
-          <BigTitle title="Projects"/>
-        </section>
-        <section className="about">
-          <BigTitle title="About"/>
-        </section>
-        <section className="news">
-          <BigTitle title="Contact"/>
+          <BigTitle title="Homepage"/>
         </section>
       </nav>
 

@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './scss/index.scss';
-import App from './pages/main/Main';
-import {BrowserRouter} from 'react-router-dom';
-import {store} from './redux/Store';
+import './style/index.scss';
+// import {BrowserRouter} from 'react-router-dom';
+// import Root from "./middleware/routing/Root";
+// import {store} from './redux/Store';
 
 import * as serviceWorker from './serviceWorker';
-import Root from "./middleware/routing/Root";
+import MainPage from "./pages/MainPage";
 
 ReactDOM.render((
-    <Root store={store}/>
+  <MainPage />
 ), document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

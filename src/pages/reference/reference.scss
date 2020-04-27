@@ -1,0 +1,91 @@
+.app-reference {
+    display: grid;
+    margin-top: 0.5rem;
+
+    grid: {
+        template-columns: 1fr 5fr 1fr;
+        template-rows: 50px 80px 60px repeat(3, 1fr);
+        template-areas:
+                ". status ."
+                ". title ."
+                ". navigation ."
+                ". content ."
+                ". content ."
+                ". information .";
+    }
+
+    .status {
+        grid-area: status;
+        display: flex;
+        text-align: center;
+    }
+
+    .title {
+        grid-area: title;
+        text-align: center;
+    }
+
+    .navigation {
+        grid-area: navigation;
+        border-bottom: 2px solid #7c83df;
+    }
+
+    .content {
+        display: grid;
+        grid: {
+            area: content;
+            template-columns: 1fr;
+            template-rows: 1fr 2fr;
+            template-areas:
+                    "content-header"
+                    "content-main";
+        }
+
+        &-header {
+            grid-area: content-header;
+        }
+
+        &-main {
+            grid-area: content-main;
+        }
+
+        &-footer { }
+    }
+
+    .information {
+        grid-area: information;
+
+        background-color: #f1f5fa;
+        overflow: hidden;
+
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:link {
+            padding-bottom: 3rem;
+            color: navy;
+        }
+
+        /* visited link */
+        a:visited {
+            padding-bottom: 3rem;
+            color: darkorchid;
+        }
+
+        border-top: 1px solid gray;
+        padding-top: 1.5rem;
+        height: 3rem;
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        justify-items: flex-start;
+
+        align-content: flex-start;
+        align-items: flex-start;
+        bottom: 0;
+    }
+}
