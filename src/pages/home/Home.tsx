@@ -1,7 +1,8 @@
 import React from "react";
 import TopBar from "../../layouts/topbar/TopBar";
-import MainWindow from "../../layouts/main/MainWindow";
+import MainLayout from "../../layouts/main/MainLayout";
 import BottomBar from "../../layouts/bottombar/BottomBar";
+import {Main} from "../../middleware/routing/Main";
 
 const Home: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ const Home: React.FC = () => {
       </header>
 
       <main className="home__main">
-        <MainWindow />
+        <MainLayout />
       </main>
 
       <footer className='home__footer'>

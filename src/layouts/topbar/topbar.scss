@@ -1,3 +1,10 @@
+@mixin alignment($grid-area, $flex-position) {
+  grid-area: $grid-area;
+  justify-content: $flex-position;
+  display: flex;
+  align-items: center;
+}
+
 .top-bar {
   display: grid;
   width: 100%;
@@ -10,10 +17,7 @@
   };
 
   &__title {
-    grid-area: titles;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include alignment(titles, flex-start);
 
     .name {
       color: $black;
@@ -26,10 +30,7 @@
   }
 
   &__navigation {
-    grid-area: navigation;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include alignment(navigation, center);
 
     color: $black;
 
@@ -40,11 +41,7 @@
 
 
   &__languages {
-    grid-area: languages;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    color: $black;
+    @include alignment(languages, flex-end);
 
     .language {
       //width: 100%;

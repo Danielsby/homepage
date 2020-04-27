@@ -12,8 +12,8 @@ import Home from "../../pages/home/Home";
 export const Main = () => (
     <Switch>
       <Route exact path='/homepage' component={Home}></Route>
-      <Route exact path='/schedule' component={ScheduleContainer}></Route>
       <Route exact path='/projects' component={ProjectsContainer}></Route>
+      <Route exact path='/about' component={AboutContainer}></Route>
       <Route exact path='/contact' component={ContactContainer}></Route>
     </Switch>
 );

@@ -11,6 +11,3 @@ const text = (state = {}, action:any) => {
 };
 
 export default text;
-
-
-
