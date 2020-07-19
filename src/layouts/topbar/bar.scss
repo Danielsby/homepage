@@ -1,0 +1,56 @@
+$breakpoints: (
+        'small': 500px,
+        'large': 800px,
+);
+
+@mixin alignment($grid-area, $flex-position, $justify-self) {
+  grid-area: $grid-area;
+  display: flex;
+  align-items: center;
+  justify-self: $justify-self;
+}
+
+@mixin grid-system($row, $column, $area) {
+  grid: {
+    template-columns: $column;
+    template-rows: $row;
+    template-areas: $area;
+  };
+}
+
+@mixin change-grid($media, $row, $column, $area) {
+  @media (min-width: $media) {
+    @include grid-system($row, $column, $area);
+  }
+}
+
+.top-bar {
+  display: grid;
+  width: 100%;
+  // If mixin breaks
+  grid: {
+    template-columns: 1fr 1fr 1fr;
+    template-rows: 1fr;
+    template-areas:
+            "introduction navigation settings"
+  };
+
+  //@include change-grid(map_get($breakpoints, 'small'), 1fr, 1fr 1fr, "navigation languages");
+  //@include change-grid(map_get($breakpoints, 'large'), 1fr, 1fr 1fr 1fr, "titles navigation languages");
+
+  &__introduction {
+    @include alignment(introduction, flex-start, flex-start);
+  }
+
+  &__navigation {
+    @include alignment(navigation, center, center);
+
+    justify-items: center;
+    align-self: center;
+    justify-self: center;
+  }
+
+  &__settings {
+    @include alignment(settings, flex-end, flex-end);
+  }
+}

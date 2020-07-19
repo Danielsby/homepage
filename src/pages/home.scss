@@ -1,0 +1,77 @@
+$breakpoints: (
+  'small': 900px,
+  'large': 1300px,
+);
+
+@mixin flex-style() {
+  display: flex;
+}
+
+@mixin grid-system($row, $column, $area) {
+  grid: {
+    template-columns: $column;
+    template-rows: $row;
+    template-areas: $area;
+  };
+}
+
+@mixin change-grid($media, $row, $column, $area) {
+  @media (min-width: $media) {
+    @include grid-system($row, $column, $area);
+  }
+}
+
+.home {
+  display: grid;
+  height: 100vh;
+  background-color: $white;
+  color: $black;
+
+  grid: {
+    template-columns: 1fr;
+    template-rows: 1fr 10fr 1fr;
+    template-areas:
+      "home__header"
+      "home__main"
+      "home__footer"
+  };
+
+  &__top {
+    @include flex-style();
+    grid-area: home__header;
+    border: 1px solid $gray;
+    padding: 0 0.3rem 0.3rem;
+    font-size: 12px;
+    //@include change-grid(map_get($breakpoints, 'small'), 50px 1fr 1fr, 1fr, "home__header home__main home__footer");
+    //@include change-grid(map_get($breakpoints, 'large'), 1fr 1fr, 1fr, "home__header home__main home__footer");
+  }
+
+  &__center {
+    @include flex-style();
+    grid-area: home__main;
+    border: 1px solid $gray;
+    justify-content: center;
+
+    &--light {
+      background-color: $light-gray;
+    }
+
+    &--dark {
+      background-color: $light-black;
+    }
+    //@include change-grid(map_get($breakpoints, 'small'), 50px 1fr 1fr, 1fr, "home__header home__main home__footer");
+    //@include change-grid(map_get($breakpoints, 'large'), 1fr 1fr, 1fr, "home__header home__main home__footer");
+  }
+
+  &__bottom {
+    @include flex-style();
+    grid-area: home__footer;
+    font-size: 10px;
+    border: 1px solid $gray;
+    border: 1px solid pink;
+    justify-content: center;
+
+    //@include change-grid(map_get($breakpoints, 'small'), 50px 1fr 1fr, 1fr, "home__header home__main home__footer");
+    //@include change-grid(map_get($breakpoints, 'large'), 1fr 1fr, 1fr, "home__header home__main home__footer");
+  }
+}

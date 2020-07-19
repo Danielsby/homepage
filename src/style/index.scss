@@ -5,11 +5,11 @@
 @import 'base';
 
 // Pages
-@import '../pages/reference/home';
+@import '../pages/home';
 
 // Layouts
-@import "../layouts/topbar/top-bar";
-@import "../layouts/Later/bottombar/bottombar";
+@import "../layouts/topbar/bar";
 
 // Components
-@import '../components/displayblock/display-block';
+@import '../components/buttons/btn';
+@import '../components/nav/nav';

@@ -5,7 +5,7 @@ interface LinkProps {
     href: string;
 }
 
-const Link: React.FC<LinkProps> = ({className, href, children}) => {
+const InternetLink: React.FC<LinkProps> = ({className, href, children}) => {
     return (
         <a
             href={href}
@@ -16,4 +16,4 @@ const Link: React.FC<LinkProps> = ({className, href, children}) => {
     );
 };
 
-export default Link;
+export default InternetLink;
