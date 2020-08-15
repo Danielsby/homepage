@@ -16,11 +16,11 @@ const Home: React.FC = () => {
     switch (theme) {
       case 'light':
         setTheme('dark');
-        setBtnText('Change to light theme');
+        setBtnText('Light theme');
         break;
       default:
         setTheme('light');
-        setBtnText('Change to dark theme');
+        setBtnText('Dark theme');
         break;
     }
   }
@@ -28,29 +28,34 @@ const Home: React.FC = () => {
   return (
     <div className="home">
       <header
-        className='home__top'
+        className={classNames({
+          'home__top': true,
+          [`home__center--${theme}`]: true,
+        })}
       >
         <Bar
           data={data}
         />
-      </header>
-
-      <main
-        className={classNames({
-          "home__center": true,
-          [`home__center--${theme}`]: true,
-        })}
-      >
         <Btn
           className='btn'
           onClickHandler={setThemeHandler}
         >
           {btnText}
         </Btn>
+      </header>
+
+      <main
+        className={classNames({
+          "home__center": true,
+        })}
+      >
       </main>
 
       <footer
-        className='home__bottom'
+        className={classNames({
+          'home__bottom': true,
+          [`home__center--${theme}`]: true,
+        })}
       >
         <section className='links'>
           <article className='github'>

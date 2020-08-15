@@ -54,10 +54,12 @@ $breakpoints: (
 
     &--light {
       background-color: $light-gray;
+      color: $black;
     }
 
     &--dark {
-      background-color: $light-black;
+      background-color: $black;
+      color: #FFFF;
     }
     //@include change-grid(map_get($breakpoints, 'small'), 50px 1fr 1fr, 1fr, "home__header home__main home__footer");
     //@include change-grid(map_get($breakpoints, 'large'), 1fr 1fr, 1fr, "home__header home__main home__footer");
