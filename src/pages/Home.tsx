@@ -11,7 +11,6 @@ const Home: React.FC = () => {
   const [theme, setTheme] = useState('light');
   const [btnText, setBtnText] = useState('Dark theme')
 
-  // Handlers
   const setThemeHandler = () => {
     switch (theme) {
       case 'light':
