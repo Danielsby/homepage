@@ -11,6 +11,7 @@ const Bar: React.FC<BarProps> = (props) => {
     <div className="top-bar">
       <header className="top-bar__introduction">
         <section className="name">
+          <CustomHeader>{props.data[0]}</CustomHeader>
           <CustomHeader>{props.data[1]}</CustomHeader>
         </section>
       </header>

@@ -26,8 +26,6 @@ $breakpoints: (
 
 .top-bar {
   display: grid;
-  width: 100%;
-  // If mixin breaks
   grid: {
     template-columns: 1fr 1fr 1fr;
     template-rows: 1fr;
@@ -35,8 +33,7 @@ $breakpoints: (
             "introduction navigation settings"
   };
 
-  //@include change-grid(map_get($breakpoints, 'small'), 1fr, 1fr 1fr, "navigation languages");
-  //@include change-grid(map_get($breakpoints, 'large'), 1fr, 1fr 1fr 1fr, "titles navigation languages");
+  width: 100%;
 
   &__introduction {
     @include alignment(introduction, flex-start, flex-start);

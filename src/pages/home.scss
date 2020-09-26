@@ -29,7 +29,7 @@ $breakpoints: (
 
   grid: {
     template-columns: 1fr;
-    template-rows: 1fr 10fr 1fr;
+    template-rows: 50px 10fr 1fr;
     template-areas:
       "home__header"
       "home__main"
@@ -40,10 +40,8 @@ $breakpoints: (
     @include flex-style();
     grid-area: home__header;
     border: 1px solid $gray;
-    padding: 0 0.3rem 0.3rem;
     font-size: 12px;
-    //@include change-grid(map_get($breakpoints, 'small'), 50px 1fr 1fr, 1fr, "home__header home__main home__footer");
-    //@include change-grid(map_get($breakpoints, 'large'), 1fr 1fr, 1fr, "home__header home__main home__footer");
+    padding: 0.5rem;
   }
 
   &__center {
@@ -61,8 +59,6 @@ $breakpoints: (
       background-color: $black;
       color: #FFFF;
     }
-    //@include change-grid(map_get($breakpoints, 'small'), 50px 1fr 1fr, 1fr, "home__header home__main home__footer");
-    //@include change-grid(map_get($breakpoints, 'large'), 1fr 1fr, 1fr, "home__header home__main home__footer");
   }
 
   &__bottom {
@@ -70,10 +66,6 @@ $breakpoints: (
     grid-area: home__footer;
     font-size: 10px;
     border: 1px solid $gray;
-    border: 1px solid pink;
     justify-content: center;
-
-    //@include change-grid(map_get($breakpoints, 'small'), 50px 1fr 1fr, 1fr, "home__header home__main home__footer");
-    //@include change-grid(map_get($breakpoints, 'large'), 1fr 1fr, 1fr, "home__header home__main home__footer");
   }
 }

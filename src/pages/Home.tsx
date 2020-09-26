@@ -9,7 +9,7 @@ const Home: React.FC = () => {
   const [data, setData] = useState(['Daniel By', 'UI & Frontend Developer', 'Homepage',
     'Footer', 'Settings', 'Change theme']);
   const [theme, setTheme] = useState('light');
-  const [btnText, setBtnText] = useState('Change to dark theme')
+  const [btnText, setBtnText] = useState('Dark theme')
 
   // Handlers
   const setThemeHandler = () => {
@@ -36,12 +36,6 @@ const Home: React.FC = () => {
         <Bar
           data={data}
         />
-        <Btn
-          className='btn'
-          onClickHandler={setThemeHandler}
-        >
-          {btnText}
-        </Btn>
       </header>
 
       <main
@@ -49,6 +43,12 @@ const Home: React.FC = () => {
           "home__center": true,
         })}
       >
+        <Btn
+          className='btn'
+          onClickHandler={setThemeHandler}
+        >
+          {btnText}
+        </Btn>
       </main>
 
       <footer
