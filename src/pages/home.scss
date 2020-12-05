@@ -29,7 +29,7 @@ $breakpoints: (
 
   grid: {
     template-columns: 1fr;
-    template-rows: 50px 10fr 1fr;
+    template-rows: 70px 10fr 1fr;
     template-areas:
       "home__header"
       "home__main"
@@ -37,17 +37,17 @@ $breakpoints: (
   };
 
   &__top {
+    $side-gap: 0.7rem;
     @include flex-style();
     grid-area: home__header;
-    border: 1px solid $gray;
-    font-size: 12px;
-    padding: 0.5rem;
+    font-size: $font-medium;
+    border-bottom: 2px solid $border;
+    padding: $side-gap;
   }
 
   &__center {
     @include flex-style();
     grid-area: home__main;
-    border: 1px solid $gray;
     justify-content: center;
 
     &--light {
@@ -64,7 +64,7 @@ $breakpoints: (
   &__bottom {
     @include flex-style();
     grid-area: home__footer;
-    font-size: 10px;
+    font-size: $font-small;
     border: 1px solid $gray;
     justify-content: center;
   }

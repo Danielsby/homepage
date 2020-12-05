@@ -5,7 +5,6 @@ import InternetLink from "../components/nav/Link";
 const classNames = require('classnames');
 
 const Home: React.FC = () => {
-  // State
   const [data, setData] = useState(['Daniel By', 'UI & Frontend Developer', 'Homepage',
     'Footer', 'Settings', 'Change theme']);
   const [theme, setTheme] = useState('light');
@@ -34,6 +33,8 @@ const Home: React.FC = () => {
       >
         <Bar
           data={data}
+          setThemeHandler={setThemeHandler}
+          btnText={btnText}
         />
       </header>
 
@@ -42,12 +43,6 @@ const Home: React.FC = () => {
           "home__center": true,
         })}
       >
-        <Btn
-          className='btn'
-          onClickHandler={setThemeHandler}
-        >
-          {btnText}
-        </Btn>
       </main>
 
       <footer

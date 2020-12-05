@@ -1,9 +1,12 @@
 import * as React from 'react';
 import CustomHeader from "../../components/titles/CustomHeader";
 import StyleText from "../../components/StyleText";
+import Btn from "../../components/buttons/Btn";
 
 interface BarProps {
-  data: Array<string>
+  data: Array<string>,
+  setThemeHandler: any,
+  btnText: string,
 }
 
 const Bar: React.FC<BarProps> = (props) => {
@@ -18,6 +21,12 @@ const Bar: React.FC<BarProps> = (props) => {
 
       <footer className="top-bar__settings">
         <StyleText>{props.data[4]}</StyleText>
+        <Btn
+          className='btn'
+          onClickHandler={props.setThemeHandler}
+        >
+          {props.btnText}
+        </Btn>
       </footer>
     </div>
   )
