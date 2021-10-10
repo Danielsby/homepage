@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import Bar from "../layouts/topbar/Bar";
-import Btn from "../components/buttons/Btn";
 import InternetLink from "../components/nav/Link";
+import Accordion from "../components/accordion/Accordion";
 const classNames = require('classnames');
 
 const Home: React.FC = () => {
   const [data, setData] = useState(['Daniel By', 'UI & Frontend Developer', 'Homepage',
     'Footer', 'Settings', 'Change theme']);
+
+  // Button
   const [theme, setTheme] = useState('light');
   const [btnText, setBtnText] = useState('Dark theme')
-
+  // Set theme
   const setThemeHandler = () => {
     switch (theme) {
       case 'light':
@@ -24,33 +26,11 @@ const Home: React.FC = () => {
   }
 
   return (
-    <div className="home">
-      <header
-        className={classNames({
-          'home__top': true,
-          [`home__center--${theme}`]: true,
-        })}
-      >
-        <Bar
-          data={data}
-          setThemeHandler={setThemeHandler}
-          btnText={btnText}
-        />
+    <div className="page">
+      <header id="header">
       </header>
 
-      <main
-        className={classNames({
-          "home__center": true,
-        })}
-      >
-      </main>
-
-      <footer
-        className={classNames({
-          'home__bottom': true,
-          [`home__center--${theme}`]: true,
-        })}
-      >
+      <main>
         <section className='links'>
           <article className='github'>
             <InternetLink
@@ -70,6 +50,9 @@ const Home: React.FC = () => {
             </InternetLink>
           </article>
         </section>
+      </main>
+
+      <footer id="footer">
       </footer>
     </div>
   );

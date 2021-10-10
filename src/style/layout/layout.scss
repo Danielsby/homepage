@@ -1,0 +1,30 @@
+.page {
+  //display: grid;
+  //grid-template-rows: auto 1fr auto;
+  //grid-auto-flow: column;
+  //height: calc(100vh - 4rem);
+}
+
+.page__parallax-1 {
+  background-color: $blue-dark;
+  height: 100%;
+  padding: $spacing;
+}
+
+.page__parallax-2 {
+  background-color: $blue;
+  height: 100%;
+  padding: $spacing;
+}
+
+.page__parallax-3 {
+  background-color: $blue-light;
+  height: 100%;
+  padding: $spacing;
+}
+
+.page__parallax-4 {
+  background-color: $yellow-dark;
+  height: 100%;
+  padding: $spacing;
+}

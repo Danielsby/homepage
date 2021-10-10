@@ -2,13 +2,12 @@
 
 // Global
 @import '../components/nav/nav';
-@import 'base';
-
-// Pages
-@import '../pages/home';
+@import 'base/base';
 
 // Layouts
 @import "../layouts/topbar/bar";
+@import "layout/layout";
+@import "layout/universial";
 
 // Components
 @import '../components/buttons/btn';
