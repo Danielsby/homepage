@@ -1,0 +1,19 @@
+.page {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 150px 1fr 150px;
+}
+.page__header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.page__main {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+.page__footer {
+  display: flex;
+  justify-content: center;
+}

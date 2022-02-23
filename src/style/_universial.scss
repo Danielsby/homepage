@@ -1,0 +1,26 @@
+#header {
+  :not(p) {
+    justify-content: center;
+  }
+
+  display: flex;
+  align-items: center;
+  padding: $spacing;
+  background-color: $blue-dark;
+
+  a, ul, li {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 1rem;
+    display: flex;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+#footer {
+  padding: $spacing;
+}
