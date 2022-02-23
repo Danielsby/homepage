@@ -4,32 +4,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/jest": "^24.9.1",
-    "axios": "^0.19.2",
+    "axios": "^0.26.0",
     "classnames": "^2.2.6",
-    "react-scripts": "^3.4.1",
     "typescript": "^3.6.3"
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "deploy": "npm run build&&gh-pages -d build",
+    "deploy-two": "gh-pages -d build"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.1",
     "gh-pages": "^2.2.0",
-    "react-docgen-typescript-loader": "^3.7.2",
-    "ts-jest": "^24.1.0"
+    "react-docgen-typescript-loader": "^2.2.0"
   }
 }
