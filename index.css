@@ -6,6 +6,7 @@ html, body {
   color: rgba(72, 69, 69, 0.93);
 }
 
+/* links */
 a {
   font-size: 38px;
 }
@@ -28,29 +29,26 @@ p {
   padding: 0;
   margin: 0;
 }
-
 h1, h2, h3, h4, h5 {
   font-size: 1.6em;
 }
 
+/* page */
 .page {
   display: grid;
   height: 100vh;
   grid-template-rows: 150px 1fr 150px;
 }
-
 .page__header {
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
-
 .page__main {
   display: flex;
   justify-content: center;
   padding-top: 5rem;
 }
-
 .page__footer {
   display: flex;
   justify-content: center;
